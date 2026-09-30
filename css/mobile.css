@@ -1,0 +1,124 @@
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  .nav-links, 
+  .nav-actions .btn-cta {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 71px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-dark);
+    border-bottom: 2px solid var(--surface-border);
+    padding: 1.5rem;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .mobile-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  /* Deep Green Mobile Cards */
+  .mobile-link {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1.2rem;
+    background-color: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .mobile-link:hover {
+    background-color: var(--brand-green);
+    border-color: var(--brand-orange);
+    color: #ffffff;
+  }
+
+  /* Flame Orange Full-Width Mobile CTA */
+  .mobile-link.mobile-cta-btn {
+    background-color: var(--cta-accent);
+    color: var(--cta-text);
+    font-weight: 700;
+    border: none;
+    margin-top: 0.5rem;
+  }
+
+  .mobile-link.mobile-cta-btn:hover {
+    background-color: var(--cta-hover);
+  }
+  .hero-section {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .btn-primary-lg,
+  .btn-secondary-lg {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-proof {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .proof-divider {
+    width: 80%;
+    height: 1px;
+  }
+   .services-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .service-card {
+    padding: 1.75rem 1.5rem;
+  }
+  .process-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .process-step {
+    padding: 1.5rem;
+  }
+}
+
